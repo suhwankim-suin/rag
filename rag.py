@@ -1,8 +1,8 @@
 # rag.py
 import os
-from dotenv import load_dotenv
+# from dotenv import load_dotenv
 
-load_dotenv()
+# load_dotenv()
 
 import streamlit as st
 
@@ -75,4 +75,5 @@ if prompt := st.chat_input():
     
     st.session_state[ "messages" ].append( AIMessage( result ) )
  
+
  
