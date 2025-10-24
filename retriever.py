@@ -1,8 +1,8 @@
 # retriever.py
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
-load_dotenv()
+#load_dotenv()
 
 # 임베딩 모델 선언
 from langchain_openai import OpenAIEmbeddings
@@ -57,3 +57,4 @@ query_qugmentation_prompt = ChatPromptTemplate.from_messages(
 )
 
 query_qugmentation_chain = query_qugmentation_prompt | llm | StrOutputParser()
+
